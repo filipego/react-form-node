@@ -51,7 +51,7 @@ body{
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -76,6 +76,7 @@ p{
 }
 
 .contact-form{
+  overflow: hidden;;
   margin: 50px 0;
   .input-row{
     width: 50%;
@@ -93,10 +94,40 @@ p{
       background: rgba(128,173,205,0.04);
       font-weight: 200;
       color: white;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
 
       padding: 15px 20px;
-      font-size: 28px;
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      &:focus{
+        outline: none;
+        background: rgba(128,173,205,0.16);
+        color: white;
+      }
+      &::placeholder{
+        color: rgba(255,255,255,0.5);
+      }
+    }
+  }
+  .textarea{
+    clear: both;
+    float: left;
+    width: 100%;
+    textarea{
+      width: 100%;
+      -webkit-transition: .3s;
+      transition: .3s;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      background: rgba(128,173,205,0.04);
+      font-weight: 200;
+      color: white;
+      margin-bottom: 35px;
+
+      padding: 15px 20px;
+      font-size: 24px;
+      letter-spacing: 1px;
       line-height: 1.5;
       &:focus{
         outline: none;
@@ -109,8 +140,22 @@ p{
     }
   }
   button{
+    background: #ff4949;
+    color: white;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border: 2px solid transparent;
+    border-radius: 10px;
     clear: both;
     float: left;
-    margin-top: 30px;
+    margin-top: 10px;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover, &:focus{
+      outline: none;
+      background: rgba(128,173,205,0.16);
+      color: white;
+    }
   }
 }
