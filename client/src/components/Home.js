@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import ContactForm from '../containers/ContactForm'
+import Contact from './Contact'
 
 class Content extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Contact Form</h2>
-        <ContactForm />
+      <div className="container">
+        <Contact />
       </div>
     );
   }

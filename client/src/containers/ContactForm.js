@@ -41,9 +41,9 @@ const renderField = ({ label, input, placeholder, type, meta: { touched, error }
 
 let ContactForm = ({ handleSubmit }) => {
   return (
-    <form onSubmit={ handleSubmit(submit) }>
-        <Field name="firstName" label="First Name" component={renderField} type="text" />
-        <Field name="lastName" label="First Name" component={renderField} type="text" />
+    <form className="contact-form" onSubmit={ handleSubmit(submit) }>
+        <Field name="firstName" label="First Name" placeholder="First Name" component={renderField} type="text" />
+        <Field name="lastName" label="Last Name" placeholder="Last Name" component={renderField} type="text" />
         <Field name="email" label="Email" placeholder="email@email.com" component={renderField} type="email" />
         <button type="submit">Submit</button>
     </form>
